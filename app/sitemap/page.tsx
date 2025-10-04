@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Beams from '../components/Beams';
 
 export default function Sitemap() {
@@ -85,14 +86,14 @@ export default function Sitemap() {
       {/* Header */}
       <header className={`sticky top-0 z-50 backdrop-blur-xl transition-all duration-300 ${scrolled ? 'bg-[#151518]/90 shadow-lg shadow-cyan-500/5 border-b border-cyan-500/10' : 'bg-transparent'}`}>
         <div className="container mx-auto flex justify-between items-center px-6 py-5">
-          <a href="/" className="text-xl text-cyan-400 font-bold tracking-wide flex items-center group cursor-pointer">
+          <Link href="/" className="text-xl text-cyan-400 font-bold tracking-wide flex items-center group cursor-pointer">
             <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse shadow-lg shadow-cyan-500/50"></span>
             <span className="group-hover:text-white transition-colors duration-300">Ifeoluwa</span>
             <span className="text-cyan-500">.dev</span>
-          </a>
-          <a href="/" className="px-6 py-2 border-2 border-cyan-400 text-cyan-400 rounded-lg font-medium hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300">
+          </Link>
+          <Link href="/" className="px-6 py-2 border-2 border-cyan-400 text-cyan-400 rounded-lg font-medium hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300">
             Back to Home
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -111,7 +112,7 @@ export default function Sitemap() {
                 Site <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-orange-500 bg-clip-text text-transparent">Map</span>
               </h1>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                Explore the complete structure of Ifeoluwa.dev. Find exactly what you're looking for with our comprehensive site overview.
+                Explore the complete structure of Ifeoluwa.dev. Find exactly what you&apos;re looking for with our comprehensive site overview.
               </p>
             </div>
           </div>
@@ -236,7 +237,7 @@ export default function Sitemap() {
           <div className="bg-gradient-to-br from-[#1a1a1e]/80 to-[#1a1a1e]/40 backdrop-blur-sm p-8 rounded-3xl border border-gray-800">
             <div className="max-w-3xl mx-auto text-center">
               <h3 className="text-2xl font-bold text-white mb-4">
-                Can't Find What You're Looking For?
+                Can&apos;t Find What You&apos;re Looking For?
               </h3>
               <p className="text-gray-400 mb-6">
                 Use the search below or contact me directly for assistance
@@ -254,12 +255,12 @@ export default function Sitemap() {
                     </svg>
                   </div>
                 </div>
-                <a
+                <Link
                   href="/#contact"
                   className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0e0e10] rounded-xl font-bold hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105"
                 >
                   Contact Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -280,7 +281,7 @@ export default function Sitemap() {
               { name: 'Projects', url: '/#projects', visits: '1.8K', icon: '💼', gradient: 'from-purple-400 to-pink-500' },
               { name: 'Contact', url: '/#contact', visits: '1.2K', icon: '📧', gradient: 'from-green-400 to-teal-500' }
             ].map((page, idx) => (
-              <a
+              <Link
                 key={idx}
                 href={page.url}
                 className="group relative bg-gradient-to-br from-[#1a1a1e]/80 to-[#1a1a1e]/40 backdrop-blur-sm p-8 rounded-3xl border border-gray-800 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden"
@@ -306,7 +307,7 @@ export default function Sitemap() {
                     </svg>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -335,24 +336,24 @@ export default function Sitemap() {
                 Explore my work, learn about my skills, or get in touch to discuss your next project
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <Link
                   href="/#projects"
                   className="px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0e0e10] rounded-xl font-bold hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105"
                 >
                   View Projects
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#about"
                   className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-xl font-bold hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300 hover:scale-105"
                 >
                   Learn More
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/#contact"
                   className="px-8 py-4 border-2 border-purple-400 text-purple-400 rounded-xl font-bold hover:bg-purple-400 hover:text-white transition-all duration-300 hover:scale-105"
                 >
                   Contact Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -369,11 +370,11 @@ export default function Sitemap() {
             </div>
             
             <div className="flex space-x-6 text-sm">
-              <a href="/privacy" className="hover:text-cyan-400 transition-colors duration-300">Privacy</a>
+              <Link href="/privacy" className="hover:text-cyan-400 transition-colors duration-300">Privacy</Link>
               <span>•</span>
-              <a href="/terms" className="hover:text-cyan-400 transition-colors duration-300">Terms</a>
+              <Link href="/terms" className="hover:text-cyan-400 transition-colors duration-300">Terms</Link>
               <span>•</span>
-              <a href="/sitemap" className="hover:text-cyan-400 transition-colors duration-300">Sitemap</a>
+              <Link href="/sitemap" className="hover:text-cyan-400 transition-colors duration-300">Sitemap</Link>
             </div>
           </div>
           
