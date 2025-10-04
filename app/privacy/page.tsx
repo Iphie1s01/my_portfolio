@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Beams from '../components/Beams';
 
 export default function PrivacyPolicy() {
@@ -74,14 +75,14 @@ export default function PrivacyPolicy() {
       {/* Header */}
       <header className={`sticky top-0 z-50 backdrop-blur-xl transition-all duration-300 ${scrolled ? 'bg-[#151518]/90 shadow-lg shadow-cyan-500/5 border-b border-cyan-500/10' : 'bg-transparent'}`}>
         <div className="container mx-auto flex justify-between items-center px-6 py-5">
-          <a href="/" className="text-xl text-cyan-400 font-bold tracking-wide flex items-center group cursor-pointer">
+          <Link href="/" className="text-xl text-cyan-400 font-bold tracking-wide flex items-center group cursor-pointer">
             <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse shadow-lg shadow-cyan-500/50"></span>
             <span className="group-hover:text-white transition-colors duration-300">Ifeoluwa</span>
             <span className="text-cyan-500">.dev</span>
-          </a>
-          <a href="/" className="px-6 py-2 border-2 border-cyan-400 text-cyan-400 rounded-lg font-medium hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300">
+          </Link>
+          <Link href="/" className="px-6 py-2 border-2 border-cyan-400 text-cyan-400 rounded-lg font-medium hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300">
             Back to Home
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -159,7 +160,7 @@ export default function PrivacyPolicy() {
                   Welcome to Ifeoluwa.dev, the personal portfolio website of Otudero Ifeoluwa. This Privacy Policy explains how I collect, use, and protect information when you visit my website.
                 </p>
                 <p>
-                  As a personal portfolio, this website primarily serves to showcase my work and skills. I'm committed to protecting your privacy and being transparent about data practices.
+                  As a personal portfolio, this website primarily serves to showcase my work and skills. I&apos;m committed to protecting your privacy and being transparent about data practices.
                 </p>
                 <div className="bg-cyan-400/10 border border-cyan-400/30 rounded-xl p-4 mt-4">
                   <p className="text-cyan-400 font-medium">
@@ -270,7 +271,7 @@ export default function PrivacyPolicy() {
               </div>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  I take appropriate security measures to protect any information you provide. As a personal portfolio website, I don't collect sensitive personal information, and any contact information is stored securely.
+                  I take appropriate security measures to protect any information you provide. As a personal portfolio website, I don&apos;t collect sensitive personal information, and any contact information is stored securely.
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 mt-6">
                   {[
@@ -360,12 +361,12 @@ export default function PrivacyPolicy() {
                     <span className="mr-2">✉️</span>
                     ifeoluwa.dev@gmail.com
                   </a>
-                  <a
+                  <Link
                     href="/"
                     className="flex items-center justify-center border-2 border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl font-bold hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300"
                   >
                     Return to Homepage
-                  </a>
+                  </Link>
                 </div>
               </div>
             </section>

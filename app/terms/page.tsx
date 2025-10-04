@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Beams from '../components/Beams';
 
 export default function TermsOfService() {
@@ -74,14 +75,14 @@ export default function TermsOfService() {
       {/* Header */}
       <header className={`sticky top-0 z-50 backdrop-blur-xl transition-all duration-300 ${scrolled ? 'bg-[#151518]/90 shadow-lg shadow-cyan-500/5 border-b border-cyan-500/10' : 'bg-transparent'}`}>
         <div className="container mx-auto flex justify-between items-center px-6 py-5">
-          <a href="/" className="text-xl text-cyan-400 font-bold tracking-wide flex items-center group cursor-pointer">
+          <Link href="/" className="text-xl text-cyan-400 font-bold tracking-wide flex items-center group cursor-pointer">
             <span className="w-2 h-2 bg-cyan-400 rounded-full mr-2 animate-pulse shadow-lg shadow-cyan-500/50"></span>
             <span className="group-hover:text-white transition-colors duration-300">Ifeoluwa</span>
             <span className="text-cyan-500">.dev</span>
-          </a>
-          <a href="/" className="px-6 py-2 border-2 border-cyan-400 text-cyan-400 rounded-lg font-medium hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300">
+          </Link>
+          <Link href="/" className="px-6 py-2 border-2 border-cyan-400 text-cyan-400 rounded-lg font-medium hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300">
             Back to Home
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -260,7 +261,7 @@ export default function TermsOfService() {
                 <div className="space-y-3 mt-4">
                   {[
                     { title: 'Plagiarism', desc: 'Copying my work without attribution' },
-                    { title: 'Misrepresentation', desc: 'Claiming association with me that doesn\'t exist' },
+                    { title: 'Misrepresentation', desc: 'Claiming association with me that doesn&apos;t exist' },
                     { title: 'Harassment', desc: 'Sending inappropriate or offensive messages' },
                     { title: 'Spam', desc: 'Sending unsolicited bulk messages' },
                     { title: 'Security Violations', desc: 'Attempting to compromise website security' },
@@ -288,7 +289,7 @@ export default function TermsOfService() {
               </div>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  The information on this portfolio website is provided on an "as is" basis for general informational purposes only.
+                  The information on this portfolio website is provided on an &quot;as is&quot; basis for general informational purposes only.
                 </p>
                 <div className="bg-yellow-400/10 border border-yellow-400/30 rounded-xl p-6">
                   <h3 className="text-lg font-semibold text-white mb-3">Please note:</h3>
@@ -356,7 +357,7 @@ export default function TermsOfService() {
                       'Repeated violations of these terms',
                       'Inappropriate communication',
                       'Attempts to misuse the website',
-                      'Any activity that harms the portfolio\'s purpose'
+                      'Any activity that harms the portfolio&apos;s purpose'
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start space-x-2">
                         <span className="text-purple-400 mt-1">→</span>
@@ -389,12 +390,12 @@ export default function TermsOfService() {
                     <span className="mr-2">✉️</span>
                     ifeoluwa.dev@gmail.com
                   </a>
-                  <a
+                  <Link
                     href="/"
                     className="flex items-center justify-center border-2 border-purple-400 text-purple-400 px-6 py-3 rounded-xl font-bold hover:bg-purple-400 hover:text-white transition-all duration-300"
                   >
                     Return to Homepage
-                  </a>
+                  </Link>
                 </div>
               </div>
             </section>

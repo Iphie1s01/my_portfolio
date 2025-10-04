@@ -278,7 +278,7 @@ export default function Home() {
               <span>FULL-STACK DEVELOPER</span>
             </div>
             <h2 className="text-5xl md:text-7xl font-bold mb-4 leading-tight">
-              <span className="text-white">Hi, I'm</span>
+              <span className="text-white">Hi, I&apos;m</span>
               <br />
               <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent animate-gradient">
                 Ifeoluwa
@@ -311,7 +311,7 @@ export default function Home() {
               }}
               className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-xl font-bold hover:bg-cyan-400 hover:text-[#0e0e10] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
             >
-              Let's Connect
+              Let&apos;s Connect
             </a>
           </div>
         </div>
@@ -355,10 +355,10 @@ export default function Home() {
                 Crafting Digital <span className="text-cyan-400">Experiences</span>
               </h2>
               <p className="text-gray-300 leading-relaxed text-lg mb-6">
-                I'm a developer who thrives at the intersection of creativity and technology. From designing beautiful UIs to writing efficient server-side code, I love crafting digital experiences that just <span className="text-cyan-400 font-semibold">work</span>.
+                I&apos;m a developer who thrives at the intersection of creativity and technology. From designing beautiful UIs to writing efficient server-side code, I love crafting digital experiences that just <span className="text-cyan-400 font-semibold">work</span>.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Outside coding, I'm into gaming (FPS, football, and combat titles), sketching, and building side projects that push my skills forward.
+                Outside coding, I&apos;m into gaming (FPS, football, and combat titles), sketching, and building side projects that push my skills forward.
               </p>
             </div>
           </div>
@@ -389,7 +389,7 @@ export default function Home() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 text-cyan-400 text-sm font-medium mb-4">
             <span className="w-8 h-0.5 bg-cyan-400"></span>
-            <span>SKILLS & EXPERTISE</span>
+            <span>SKILLS &amp; EXPERTISE</span>
             <span className="w-8 h-0.5 bg-cyan-400"></span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -406,9 +406,9 @@ export default function Home() {
 
           <div className="space-y-6">
             {[
-              { name: 'React & Next.js', level: 95, color: 'from-cyan-400 to-blue-500' },
-              { name: 'Node.js & Express', level: 90, color: 'from-green-400 to-teal-500' },
-              { name: 'Python & Django', level: 85, color: 'from-purple-400 to-pink-500' },
+              { name: 'React &amp; Next.js', level: 95, color: 'from-cyan-400 to-blue-500' },
+              { name: 'Node.js &amp; Express', level: 90, color: 'from-green-400 to-teal-500' },
+              { name: 'Python &amp; Django', level: 85, color: 'from-purple-400 to-pink-500' },
               { name: 'UI/UX Design', level: 88, color: 'from-orange-400 to-red-500' }
             ].map((skill, index) => (
               <div key={index} className="group">
@@ -552,11 +552,11 @@ export default function Home() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Let's Build Something <span className="text-cyan-400">Amazing</span>
+              Let&apos;s Build Something <span className="text-cyan-400">Amazing</span>
             </h2>
             
             <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
-              Have a project in mind or want to collaborate? I'm always excited to work on innovative ideas and solve challenging problems.
+              Have a project in mind or want to collaborate? I&apos;m always excited to work on innovative ideas and solve challenging problems.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
