@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Developer, Innovator, Creator — Ifeoluwa Otudero",
+  title: "Ifeoluwa Otudero — Developer, Innovator, Creator",
   description: "Ifeoluwa Otudero is a web developer, software developer, innovator, and creator passionate about building impactful digital experiences.",
 };
 
