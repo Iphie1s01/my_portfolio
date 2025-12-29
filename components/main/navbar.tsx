@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-[#03001427] backdrop-blur-md shadow-lg shadow-[#2A0E61]/50 z-50">
-      <div className="flex items-center justify-between h-[70px] px-5 md:px-10">
+      <div className="flex items-center justify-between h-[50px] px-5 md:px-10">
         {/* Logo & Name */}
         <Link
           href="#hero"

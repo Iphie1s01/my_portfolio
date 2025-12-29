@@ -8,7 +8,6 @@ import { useState } from "react";
 export default function Home() {
   const [activeSection, setActiveSection] = useState("hero");
 
-  // Reconstructed Data from previous version
   const projects = [
     {
       title: "Portfolio Website",
@@ -19,15 +18,17 @@ export default function Home() {
       url: "https://ifeoluwadev.vercel.app",
     },
     {
+      title: "RivetsAI",
+      desc: "An AI-powered platform that enables users to build and deploy professional websites through natural language prompts, streamlining the web development process.",
+      tags: ["Next.js", "React", "Typescript", "Chakra UI"],
+      gradient: "from-purple-400 to-pink-500",
+      icon: "⚡",
+      url: "https://rivets.vercel.app",
+    },
+    {
       title: "Vibemaster JD Landing Page",
       desc: "A modern, energetic landing page for DJ Vibemaster JD, combining bold visuals, animations, and responsive layout for a professional presence.",
-      tags: [
-        "Next.js",
-        "React",
-        "Typescript",
-        "Chakra UI",
-        "Responsive Design",
-      ],
+      tags: ["Next.js", "React", "Typescript", "Chakra UI"],
       gradient: "from-purple-400 to-pink-500",
       icon: "🎧",
       url: "https://vibemasterjd.com",
@@ -40,6 +41,22 @@ export default function Home() {
       icon: "🎬",
       url: "https://lagoscolour.vercel.app",
     },
+    {
+      title: "Lagoscolour Marketplace",
+      desc: "A multi-vendor e-commerce hub integrated with the Lagoscolour ecosystem, offering a streamlined and secure shopping experience.",
+      tags: ["Next.js", "Typescript", "Chakra UI", "UI/UX"],
+      gradient: "from-green-400 to-teal-500",
+      icon: "🛒",
+      url: "https://lagoscolour.vercel.app/shop",
+    },
+    {
+      title: "Afrobeat Awards for Africa",
+      desc: "A modern, responsive landing page for the Afrobeat Awards for Africa, featuring bold visuals and engaging animations.",
+      tags: ["Next.js", "Typescript", "Chakra UI", "UI/UX"],
+      gradient: "from-green-400 to-teal-500",
+      icon: "🎬",
+      url: "https://afrobeats-awards.vercel.app/",
+    },
   ];
 
   return (
@@ -47,8 +64,8 @@ export default function Home() {
       <div className="flex flex-col gap-20">
         <Hero />
 
-        <section className="py-12 px-6 max-w-7xl mx-14 relative z-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <section className="py-12 px-4 sm:px-6 max-w-7xl mx-auto relative z-20">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {[
               { number: "4+", label: "Years Experience" },
               { number: "20+", label: "Projects Built" },
@@ -59,7 +76,7 @@ export default function Home() {
                 key={index}
                 className="bg-gradient-to-br from-[#1a1a1e]/80 to-[#1a1a1e]/40 backdrop-blur-sm p-6 rounded-2xl border border-cyan-500/20 text-center hover:border-cyan-500/50 transition-all duration-300 hover:scale-105"
               >
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-400 text-sm">{stat.label}</div>
@@ -73,7 +90,7 @@ export default function Home() {
 
         <section
           id="projects"
-          className="py-4 px-6 max-w-7xl mx-auto relative z-20"
+          className="py-4 px-4 sm:px-6 max-w-7xl mx-auto relative z-20"
         >
           <div className="text-center mb-16">
             <div className="flex items-center justify-center space-x-2 text-cyan-400 text-sm font-medium mb-4">
@@ -81,34 +98,56 @@ export default function Home() {
               <span>FEATURED WORK</span>
               <span className="w-8 h-0.5 bg-cyan-400"></span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
               Recent <span className="text-cyan-400">Projects</span>
             </h2>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-6 sm:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
-              <a
+              <div
                 key={index}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative bg-gradient-to-br from-[#1a1a1e]/80 to-[#1a1a1e]/40 backdrop-blur-sm rounded-3xl border border-gray-800 hover:border-cyan-500/50 transition-all duration-500 overflow-hidden cursor-pointer"
+                className="group relative bg-gradient-to-br from-[#1a1a1e]/80 to-[#1a1a1e]/40 backdrop-blur-sm rounded-3xl border border-gray-800 hover:border-cyan-500/50 transition-all duration-500 overflow-hidden"
               >
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}
                 ></div>
 
-                <div className="relative p-8">
-                  <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                    {project.icon}
-                  </div>
+                {/* Iframe Preview */}
+                <div className="relative w-full h-48 sm:h-56 md:h-48 lg:h-52 overflow-hidden rounded-t-3xl bg-gray-900">
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#1a1a1e]/60 z-10 pointer-events-none"></div>
+                  <iframe
+                    src={project.url}
+                    className="w-full h-full scale-50 origin-top-left pointer-events-none"
+                    style={{
+                      width: "200%",
+                      height: "200%",
+                      border: "none",
+                      transform: "scale(0.5)",
+                      transformOrigin: "top left",
+                      pointerEvents: "none",
+                      opacity: 0.8,
+                    }}
+                    title={`Preview of ${project.title}`}
+                    loading="lazy"
+                    tabIndex={-1}
+                  />
+                  {/* Overlay to prevent interaction */}
+                  <div className="absolute inset-0 z-20"></div>
+                </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
+                {/* Project Content */}
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative block p-6 sm:p-8"
+                >
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors duration-300">
                     {project.title}
                   </h3>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
+                  <p className="text-gray-300 text-sm sm:text-base mb-6 leading-relaxed line-clamp-3">
                     {project.desc}
                   </p>
 
@@ -116,14 +155,32 @@ export default function Home() {
                     {project.tags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="px-3 py-1 bg-cyan-900/30 text-cyan-400 text-xs rounded-full border border-cyan-500/20"
+                        className="px-2 sm:px-3 py-1 bg-cyan-900/30 text-cyan-400 text-xs rounded-full border border-cyan-500/20"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                </div>
-              </a>
+
+                  {/* View Project Link */}
+                  <div className="mt-4 flex items-center text-cyan-400 font-medium text-sm group-hover:translate-x-2 transition-transform duration-300">
+                    <span>View Project</span>
+                    <svg
+                      className="w-4 h-4 ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
             ))}
           </div>
         </section>
@@ -141,24 +198,24 @@ export default function Home() {
 
         <section
           id="contact"
-          className="py-24 px-6 max-w-4xl mx-auto text-center relative z-20"
+          className="py-16 sm:py-24 px-4 sm:px-6 max-w-4xl mx-auto text-center relative z-20"
         >
           <div className="relative">
             <div className="absolute -inset-8 bg-gradient-to-r from-cyan-400/20 to-purple-500/20 blur-3xl rounded-full"></div>
 
-            <div className="relative bg-gradient-to-br from-[#1a1a1e]/90 to-[#1a1a1e]/60 backdrop-blur-sm p-12 rounded-3xl border border-cyan-500/20">
+            <div className="relative bg-gradient-to-br from-[#1a1a1e]/90 to-[#1a1a1e]/60 backdrop-blur-sm p-6 sm:p-8 md:p-12 rounded-3xl border border-cyan-500/20">
               <div className="flex items-center justify-center space-x-2 text-cyan-400 text-sm font-medium mb-6">
                 <span className="w-8 h-0.5 bg-cyan-400"></span>
                 <span>GET IN TOUCH</span>
                 <span className="w-8 h-0.5 bg-cyan-400"></span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                 Let&apos;s Build Something{" "}
                 <span className="text-cyan-400">Amazing</span>
               </h2>
 
-              <p className="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+              <p className="text-gray-300 text-base sm:text-lg mb-8 sm:mb-10 max-w-2xl mx-auto">
                 Have a project in mind or want to collaborate? I&apos;m always
                 excited to work on innovative ideas and solve challenging
                 problems.
@@ -167,7 +224,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
                 <a
                   href="mailto:ifeoluwa1s01@gmail.com"
-                  className="group flex items-center bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0e0e10] px-8 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105"
+                  className="group flex items-center justify-center bg-gradient-to-r from-cyan-400 to-blue-500 text-[#0e0e10] px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

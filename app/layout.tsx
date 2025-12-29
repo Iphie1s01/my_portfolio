@@ -13,8 +13,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Ifeoluwa | Full-Stack Developer",
-  description: "Portfolio of Ifeoluwa, a Full-Stack Developer from Nigeria.",
+  title: "Ifeoluwa | Full-Stack Web & Software Developer",
+  description:
+    "I'm a developer who thrives at the intersection of creativity and technology. From designing beautiful UIs to writing efficient server-side code, I love crafting digital experiences that just",
 };
 
 export default function RootLayout({

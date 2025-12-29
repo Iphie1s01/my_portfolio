@@ -75,7 +75,7 @@ export const HeroContent = () => {
       {/* Right Side Image */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full flex justify-center items-center mt-8 md:mt-0"
+        className="w-full h-full flex justify-center items-center mt-10 md:mt-0 hidden md:flex"
       >
         <Image
           src="/hero-bg.svg"
