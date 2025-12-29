@@ -1,5 +1,4 @@
-
-import { RxHome, RxPerson, RxDashboard, RxClipboard, RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
+import { RxLinkedinLogo, RxGithubLogo } from "react-icons/rx";
 
 export interface Skill {
   skill_name: string;

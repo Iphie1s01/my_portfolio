@@ -34,15 +34,12 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.5)}
           className="text-3xl sm:text-4xl md:text-6xl font-bold text-white max-w-[600px] leading-tight"
         >
-          Hi, I&apos;m{" "}
+          Building{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            Ifeoluwa
-          </span>{" "}
-          <br />
-          Crafting Intuitive{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            Web Experiences
+            Digital Excellence
           </span>
+          <br />
+          One Line of Code at a Time
         </motion.h1>
 
         {/* Description */}

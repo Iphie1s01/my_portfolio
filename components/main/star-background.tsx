@@ -6,6 +6,7 @@ import * as random from "maath/random";
 import { useState, useRef, Suspense } from "react";
 import * as THREE from "three";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const StarBackground = (props: any) => {
   const ref = useRef<THREE.Points>(null);
   const [sphere] = useState(() =>
@@ -22,6 +23,7 @@ export const StarBackground = (props: any) => {
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ref={ref as any}
         stride={3}
         positions={new Float32Array(sphere)}
