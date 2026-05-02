@@ -1,21 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-// Navbar is requested from the new project template
 import { Navbar } from "@/components/main/navbar";
-import { StarsCanvas } from "@/components/main/star-background";
 import { cn } from "@/lib/utils";
-
-const inter = Inter({ subsets: ["latin"] });
+import CursorGlow from "@/components/main/cursor-glow";
 
 export const viewport: Viewport = {
-  themeColor: "#030014",
+  themeColor: "#0A0A0B",
 };
 
 export const metadata: Metadata = {
-  title: "Ifeoluwa | Full-Stack Web & Software Developer",
+  title: "Ifeoluwa — Digital Architect",
   description:
-    "I'm a developer who thrives at the intersection of creativity and technology. From designing beautiful UIs to writing efficient server-side code, I love crafting digital experiences that just",
+    "Full-stack developer turning product ideas into production-grade reality — clean code, considered design, zero shortcuts.",
 };
 
 export default function RootLayout({
@@ -25,16 +21,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "bg-[#030014] overflow-y-scroll overflow-x-hidden",
-          inter.className
-        )}
-      >
-        <StarsCanvas />
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+      </head>
+      <body className={cn("overflow-y-scroll overflow-x-hidden")}>
+        <CursorGlow />
         <Navbar />
         {children}
-        {/* Footer removed from here to be included in page.tsx as per user preference for old footer */}
       </body>
     </html>
   );
