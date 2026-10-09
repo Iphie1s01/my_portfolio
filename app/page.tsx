@@ -458,40 +458,6 @@ export default function Home() {
 
         <div className="pro-projects-grid reveal">
           <a
-            href="https://vibemasterjd.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="pro-project-card"
-          >
-            {/* <div className="pro-preview">
-              <img
-                src="https://api.microlink.io/?url=https%3A%2F%2Fvibemasterjd.com&screenshot=true&meta=false&embed=screenshot.url"
-                alt="Vibemaster JD preview"
-                className="pro-preview-img"
-              />
-              <div className="pro-preview-overlay" />
-            </div> */}
-            <div className="pro-card-body">
-              <div className="pro-badge">Client Project</div>
-              <div className="pro-title">Vibemaster JD</div>
-              <p className="pro-desc">
-                A modern, energetic landing page for DJ Vibemaster JD — designed
-                to amplify his brand, showcase his mixes, and drive booking
-                enquiries.
-              </p>
-              <div className="project-tags">
-                <span className="tag">Next.js</span>
-                <span className="tag">Typscript</span>
-                <span className="tag">React</span>
-                <span className="tag">Tailwind</span>
-              </div>
-              <div className="project-arrow">
-                View Live <span>→</span>
-              </div>
-            </div>
-          </a>
-
-          <a
             href="https://www.lagoscolour.com.ng"
             target="_blank"
             rel="noopener noreferrer"
@@ -555,6 +521,40 @@ export default function Home() {
                 <span className="tag">TypeScript</span>
                 <span className="tag">Chakra UI</span>
                 <span className="tag">Node.js</span>
+              </div>
+              <div className="project-arrow">
+                View Live <span>→</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://vibemasterjd.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pro-project-card"
+          >
+            {/* <div className="pro-preview">
+              <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Fvibemasterjd.com&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Vibemaster JD preview"
+                className="pro-preview-img"
+              />
+              <div className="pro-preview-overlay" />
+            </div> */}
+            <div className="pro-card-body">
+              <div className="pro-badge">Client Project</div>
+              <div className="pro-title">Vibemaster JD</div>
+              <p className="pro-desc">
+                A modern, energetic landing page for DJ Vibemaster JD — designed
+                to amplify his brand, showcase his mixes, and drive booking
+                enquiries.
+              </p>
+              <div className="project-tags">
+                <span className="tag">Next.js</span>
+                <span className="tag">Typscript</span>
+                <span className="tag">React</span>
+                <span className="tag">Tailwind</span>
               </div>
               <div className="project-arrow">
                 View Live <span>→</span>
