@@ -337,11 +337,11 @@ export default function Home() {
           <a href="https://vibemasterjd.com" target="_blank" rel="noopener noreferrer" className="pro-project-card">
             <div className="pro-preview">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              {/* <img
                 src="https://api.microlink.io/?url=https%3A%2F%2Fvibemasterjd.com&screenshot=true&meta=false&embed=screenshot.url"
                 alt="Vibemaster JD preview"
                 className="pro-preview-img"
-              />
+              /> */}
               <div className="pro-preview-overlay" />
             </div>
             <div className="pro-card-body">
@@ -360,14 +360,14 @@ export default function Home() {
             </div>
           </a>
 
-          <a href="https://lagoscolour.vercel.app" target="_blank" rel="noopener noreferrer" className="pro-project-card">
+          <a href="https://lagoscolour.com.ng" target="_blank" rel="noopener noreferrer" className="pro-project-card">
             <div className="pro-preview">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://api.microlink.io/?url=https%3A%2F%2Flagoscolour.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+              {/* <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Flagoscolour.com.ng&screenshot=true&meta=false&embed=screenshot.url"
                 alt="Lagoscolour Entertainment preview"
                 className="pro-preview-img"
-              />
+              /> */}
               <div className="pro-preview-overlay" />
             </div>
             <div className="pro-card-body">
