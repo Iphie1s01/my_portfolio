@@ -244,6 +244,15 @@ export default function Home() {
 
         <div className="projects-grid reveal">
           <a href="https://ifeoluwadev.vercel.app" target="_blank" rel="noopener noreferrer" className="project-card">
+            <div className="project-preview">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Fifeoluwadev.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Ifeoluwa.dev preview"
+                className="project-preview-img"
+              />
+              <div className="project-preview-overlay" />
+            </div>
             <div className="project-num">01 / Portfolio</div>
             <div className="project-title">Ifeoluwa.dev</div>
             <div className="project-impact">⟶ The site you&apos;re looking at, rebuilt from scratch</div>
@@ -260,6 +269,15 @@ export default function Home() {
           </a>
 
           <a href="https://rivets.vercel.app" target="_blank" rel="noopener noreferrer" className="project-card">
+            <div className="project-preview">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Frivets.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                alt="RivetsAI preview"
+                className="project-preview-img"
+              />
+              <div className="project-preview-overlay" />
+            </div>
             <div className="project-num">02 / AI SaaS</div>
             <div className="project-title">RivetsAI</div>
             <div className="project-impact">⟶ Build websites through natural language prompts</div>
@@ -276,20 +294,96 @@ export default function Home() {
             <div className="project-arrow">View Live <span>→</span></div>
           </a>
 
-          <a href="https://afrobeats-awards.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-card">
-            <div className="project-num">03 / Landing Page</div>
-            <div className="project-title">Afrobeat Awards</div>
-            <div className="project-impact">⟶ Bold culture-first landing experience</div>
+          <a href="https://flowdesk-lac-theta.vercel.app/" target="_blank" rel="noopener noreferrer" className="project-card">
+            <div className="project-preview">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Fflowdesk-lac-theta.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                alt="FlowDesk preview"
+                className="project-preview-img"
+              />
+              <div className="project-preview-overlay" />
+            </div>
+            <div className="project-num">03 / Full-Stack SaaS</div>
+            <div className="project-title">FlowDesk</div>
+            <div className="project-impact">⟶ One workspace to run your entire freelance business</div>
             <p className="project-desc">
-              A high-impact landing page for the Afrobeat Awards for Africa. Heavy on animation, 
-              cultural storytelling, and visual identity. Built to convert and captivate.
+              A full-stack SaaS platform built for freelancers and small teams. Manage clients, track 
+              projects, assign tasks, and send professional invoices — all from a single, unified dashboard 
+              that keeps the chaos out of the work.
             </p>
             <div className="project-tags">
               <span className="tag">Next.js</span>
               <span className="tag">TypeScript</span>
-              <span className="tag">UI/UX</span>
+              <span className="tag">Chakra UI</span>
+              <span className="tag">Neon</span>
             </div>
             <div className="project-arrow">View Live <span>→</span></div>
+          </a>
+        </div>
+
+        {/* PROFESSIONAL / CLIENT PROJECTS */}
+        <div className="reveal" style={{ marginTop: "100px" }}>
+          <div className="section-tag">Client Work</div>
+          <h2 className="section-title" style={{ fontSize: "clamp(36px, 5vw, 64px)" }}>
+            BUILT FOR<br /><span className="amber">REAL CLIENTS.</span>
+          </h2>
+          <p className="project-desc" style={{ maxWidth: "520px", marginTop: "16px" }}>
+            Production projects shipped for businesses and individuals — real briefs, real deadlines, real stakes.
+          </p>
+        </div>
+
+        <div className="pro-projects-grid reveal">
+          <a href="https://vibemasterjd.com" target="_blank" rel="noopener noreferrer" className="pro-project-card">
+            <div className="pro-preview">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Fvibemasterjd.com&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Vibemaster JD preview"
+                className="pro-preview-img"
+              />
+              <div className="pro-preview-overlay" />
+            </div>
+            <div className="pro-card-body">
+              <div className="pro-badge">Client Project</div>
+              <div className="pro-title">Vibemaster JD</div>
+              <p className="pro-desc">
+                A modern, energetic landing page for DJ Vibemaster JD — designed to amplify his brand, 
+                showcase his mixes, and drive booking enquiries.
+              </p>
+              <div className="project-tags">
+                <span className="tag">Next.js</span>
+                <span className="tag">React</span>
+                <span className="tag">Tailwind</span>
+              </div>
+              <div className="project-arrow">View Live <span>→</span></div>
+            </div>
+          </a>
+
+          <a href="https://lagoscolour.vercel.app" target="_blank" rel="noopener noreferrer" className="pro-project-card">
+            <div className="pro-preview">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://api.microlink.io/?url=https%3A%2F%2Flagoscolour.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                alt="Lagoscolour Entertainment preview"
+                className="pro-preview-img"
+              />
+              <div className="pro-preview-overlay" />
+            </div>
+            <div className="pro-card-body">
+              <div className="pro-badge">Client Project</div>
+              <div className="pro-title">Lagoscolour Entertainment</div>
+              <p className="pro-desc">
+                A fully functional company website for Lagoscolour Entertainment — blending performance 
+                with visual appeal and an integrated multi-vendor marketplace.
+              </p>
+              <div className="project-tags">
+                <span className="tag">Next.js</span>
+                <span className="tag">TypeScript</span>
+                <span className="tag">E-Commerce</span>
+              </div>
+              <div className="project-arrow">View Live <span>→</span></div>
+            </div>
           </a>
         </div>
 
